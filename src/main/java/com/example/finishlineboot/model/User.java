@@ -12,15 +12,16 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, unique = true)
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false, length = 50)
     private String name;
 
-    @Column(name = "last_name")
+    @Column(name = "last_name", nullable = false, length = 50)
     private String lastName;
 
-    @Column(name = "age")
+    @Column(name = "age", nullable = false)
     private byte age;
 
     public User() {
