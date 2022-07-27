@@ -1,6 +1,7 @@
-package web.service;
+package com.example.finishlineboot.service;
 
-import web.model.User;
+
+import com.example.finishlineboot.model.User;
 
 import java.util.List;
 

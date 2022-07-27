@@ -1,4 +1,4 @@
-package web.model;
+package com.example.finishlineboot.model;
 
 import org.springframework.stereotype.Component;
 

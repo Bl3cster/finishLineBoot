@@ -1,6 +1,7 @@
-package web.dao;
+package com.example.finishlineboot.dao;
 
-import web.model.User;
+
+import com.example.finishlineboot.model.User;
 
 import java.util.List;
 
