@@ -20,7 +20,7 @@ public class UserController {
     }
 
     @GetMapping()
-    public String index(Model model) {
+    public String getAllUsers(Model model) {
         model.addAttribute("users", userService.getAllUsers());
         return "all-users";
     }
@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @PostMapping()
-    public String addUser(@ModelAttribute("user") User user) {
+    public String saveUser(@ModelAttribute("user") User user) {
         userService.saveUser(user);
         return "redirect:/users";
     }
