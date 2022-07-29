@@ -27,13 +27,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = true)
-    public List<User> allUsers() {
-        return userDao.allUsers();
+    public List<User> getAllUsers() {
+        return userDao.getAllUsers();
     }
 
     @Override
-    public void save(User user) {
-        userDao.save(user);
+    public void saveUser(User user) {
+        userDao.saveUser(user);
     }
 
     @Override
